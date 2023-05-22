@@ -1,0 +1,44 @@
+.Slide {
+  .slide-control-prev {
+    position: absolute;
+    bottom: -53px;
+    top: auto;
+
+    .carousel-control-prev-icon {
+      background-image: none;
+      color: #000;
+    }
+  }
+
+  .slide-control-next {
+    position: absolute;
+    bottom: -53px;
+    top: auto;
+
+    .carousel-control-next-icon {
+      color: #000;
+      background-image: none;
+    }
+  }
+
+  .number-slide {
+    position: absolute;
+    bottom: -50px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 0;
+
+    .button-slide {
+      background-color: #000;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      background-color: #ccc;
+
+      &.active {
+        background-color: #f1692f;
+      }
+    }
+  }
+}

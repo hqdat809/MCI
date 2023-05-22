@@ -1,0 +1,59 @@
+.Footer {
+  display: flex;
+  padding: 56px 218px;
+  background-color: #3e3e3e;
+  color: #fff;
+  gap: 30px;
+
+  &__img {
+    background-image: url("../../assets/img/Facebook.png");
+    height: 280px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex: 2;
+  }
+
+  &__place {
+    flex: 3;
+    &-title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 38px;
+      text-transform: uppercase;
+    }
+
+    &-space {
+      width: 80px;
+      height: 6px;
+      background-color: #fff;
+      border-radius: 20px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__place {
+    flex: 1;
+
+    &-content {
+      margin-bottom: 10px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .Footer {
+    padding: 12px 12px;
+    flex-wrap: wrap;
+
+    &__img {
+      min-width: 300px !important;
+      padding: 0 30px;
+    }
+
+    &__place {
+      min-width: 350px;
+    }
+  }
+}

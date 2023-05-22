@@ -1,0 +1,89 @@
+.Navbar {
+  max-height: calc(90px - 24px);
+  background-color: #f1692f;
+  display: flex;
+  align-items: center;
+  color: #ffff;
+  padding: 12px 0;
+  justify-content: space-between;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    &-logo {
+      border-right: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      &-text {
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+    }
+
+    &-items {
+      display: flex;
+      padding-left: 10px;
+      gap: 4px;
+    }
+
+    &-bar {
+      display: none;
+      padding: 0 16px;
+    }
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 12px;
+    &-search {
+      color: #ccc;
+      cursor: pointer;
+    }
+
+    &-login-btn {
+      background-color: #fff;
+      color: #f1692f;
+      margin: 0;
+      padding: 12px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    &-login-icon {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .Navbar {
+    &__left {
+      &-items {
+        display: none;
+      }
+
+      &-bar {
+        display: block;
+      }
+    }
+
+    &__right {
+      gap: 25px;
+      &-login {
+        display: none;
+      }
+      &-login-icon {
+        display: block;
+      }
+    }
+  }
+}

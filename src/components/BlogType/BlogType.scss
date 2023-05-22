@@ -1,0 +1,43 @@
+.BlogType {
+  margin-bottom: 15px;
+  &-search {
+    display: flex;
+    align-items: center;
+    border: 1px solid #818181;
+    padding: 6px 8px;
+    border-radius: 20px;
+    width: 100%;
+    svg {
+      color: #818181;
+    }
+
+    input {
+      width: 100%;
+      font-size: 16px;
+      border: none;
+    }
+  }
+
+  &-typeBlog {
+    padding: 0 4px;
+    cursor: pointer;
+    border-right: 1px solid #7e7e7e;
+    text-align: center;
+    flex: 1;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &-typeBlogs {
+    margin-top: 15px;
+    display: flex;
+    color: #f1692f;
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
