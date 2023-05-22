@@ -63,7 +63,10 @@ const HomePage = () => {
             >
               <div className="carousel-inner">
                 <div className="carousel-item active">
-                  <div className="HomePage__events-blog">
+                  <div
+                    className="HomePage__events-blog"
+                    onClick={handleNavigateBlog}
+                  >
                     <div className="HomePage__events-blog-img"></div>
                     <div className="HomePage__events-blog-info">
                       <div className="HomePage__events-blog-title">
@@ -83,7 +86,10 @@ const HomePage = () => {
                   </div>
                 </div>
                 <div className="carousel-item">
-                  <div className="HomePage__events-blog">
+                  <div
+                    className="HomePage__events-blog"
+                    onClick={handleNavigateBlog}
+                  >
                     <div className="HomePage__events-blog-img"></div>
                     <div className="HomePage__events-blog-info">
                       <div className="HomePage__events-blog-title">
