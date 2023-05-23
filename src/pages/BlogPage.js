@@ -264,7 +264,7 @@ const BlogPage = () => {
               </div>
             </div>
           </div>
-          <div className="Banner__form">
+          <div className="Banner__form-mobile">
             <div className="Banner__form-title">Đăng ký tư vấn khóa học</div>
             <form className="">
               <div className="Banner__form-field">

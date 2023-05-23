@@ -41,11 +41,19 @@
       background-color: #d9d9d9;
     }
   }
+
+  &-imgs-mobile {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
   .Gallery {
     padding: 12px 12px;
+
+    &-imgs-mobile {
+      display: block;
+    }
 
     &-imgs-pc {
       display: none;
